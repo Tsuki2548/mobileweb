@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU Campus Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <canvas id="logoCanvas" width="200" height="100"></canvas>
+        <h1>KKU Campus Guide</h1>
+        <p>รหัสนักศึกษา: 663380235-6 ชื่อ-สกุล: วีระวงศ์ หงษา</p>
+    </header>
+
+    <main>
+        <h2>แนะนำสถานที่ใน มข.</h2>
+        
+        <section class="place-container">
+            <article class="place-card">
+                <h3>บึงสีฐาน</h3>
+                <img src="https://via.placeholder.com/400x300" alt="บึงสีฐาน">
+                <img src="https://via.placeholder.com/400x300" alt="บึงสีฐาน 2">
+                <p>บึงสีฐานเป็นแหล่งเก็บน้ำธรรมชาติขนาดใหญ่ของมหาวิทยาลัยขอนแก่น ที่มีความสำคัญต่อระบบนิเวศและการศึกษาด้านสิ่งแวดล้อม</p>
+            </article>
+
+            <article class="place-card">
+                <h3>คอมเพล็กซ์ (ศูนย์อาหารและบริการ)</h3>
+                <img src="https://via.placeholder.com/400x300" alt="คอมเพล็กซ์">
+                <img src="https://via.placeholder.com/400x300" alt="คอมเพล็กซ์ 2">
+                <p>ศูนย์อาหารและบริการที่ให้ประโยชน์แก่นักศึกษา อาจารย์ และบุคลากรมหาวิทยาลัย พร้อมด้วยห้องน้ำและสถานที่พักผ่อน</p>
+            </article>
+
+            <article class="place-card">
+                <h3>หอสมุดกลาง</h3>
+                <img src="https://via.placeholder.com/400x300" alt="หอสมุดกลาง">
+                <img src="https://via.placeholder.com/400x300" alt="หอสมุดกลาง 2">
+                <p>หอสมุดกลางเป็นศูนย์กลางการค้นหาข้อมูลและการเรียนรู้ของมหาวิทยาลัย มีทรัพยากรสารสนเทศและสถานที่ศึกษาที่สมบูรณ์</p>
+            </article>
+
+            <article class="place-card">
+                <h3>โรงพยาบาลศรีนครินทร์</h3>
+                <img src="https://via.placeholder.com/400x300" alt="โรงพยาบาลศรีนครินทร์">
+                <img src="https://via.placeholder.com/400x300" alt="โรงพยาบาลศรีนครินทร์ 2">
+                <p>โรงพยาบาลศรีนครินทร์ให้บริการสุขภาพแก่นักศึกษา อาจารย์ บุคลากร และประชาชนในพื้นที่รอบมหาวิทยาลัยขอนแก่น</p>
+            </article>
+        </section>
+
+        <section class="contact-section">
+            <h2>แนะนำสถานที่เพิ่มเติม</h2>
+            <form method="POST" action="https://api.web3forms.com/submit">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                
+                <div class="form-group">
+                    <label for="place_name">ชื่อสถานที่:</label>
+                    <input type="text" id="place_name" name="place_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">รายละเอียด:</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="image_url">ลิงค์รูปภาพ:</label>
+                    <input type="url" id="image_url" name="image_url" required>
+                </div>
+
+                <button type="submit" class="submit-btn">ส่งแนะนำ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 KKU Campus Guide. All rights reserved. | มหาวิทยาลัยขอนแก่น</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
