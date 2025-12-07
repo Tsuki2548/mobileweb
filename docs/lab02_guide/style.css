@@ -42,6 +42,41 @@ body::before {
     }
 }
 
+/* Breadcrumb Navigation */
+.breadcrumb {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 12px 20px;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px solid #f0e0d8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.breadcrumb a {
+    color: #c85a3a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #b84a2a;
+    text-decoration: underline;
+}
+
+.breadcrumb .separator {
+    margin: 0 8px;
+    color: #ddd;
+}
+
+.breadcrumb .current {
+    color: #333;
+    font-weight: 500;
+}
+
 /* Header Styles */
 header {
     background: linear-gradient(135deg, #c85a3a 0%, #d97e54 100%);
@@ -73,10 +108,18 @@ header h1 {
     margin-bottom: 10px;
 }
 
-header p {
+header .student-info {
     font-size: 14px;
     font-weight: 300;
     opacity: 0.95;
+    margin-bottom: 5px;
+}
+
+header .course-info {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.85;
+    font-style: italic;
 }
 
 /* Main Content */
