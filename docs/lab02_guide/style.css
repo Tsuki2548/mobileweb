@@ -44,37 +44,64 @@ body::before {
 
 /* Breadcrumb Navigation */
 .breadcrumb {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 12px 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 248, 245, 0.95) 100%);
+    padding: 16px 20px;
     font-size: 13px;
     color: #666;
-    border-bottom: 1px solid #f0e0d8;
+    border-bottom: 2px solid #f0e0d8;
     position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.breadcrumb a {
+.breadcrumb-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: #c85a3a;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 6px;
 }
 
-.breadcrumb a:hover {
+.breadcrumb-link:hover {
     color: #b84a2a;
-    text-decoration: underline;
+    background-color: rgba(200, 90, 58, 0.1);
+    transform: translateX(2px);
+}
+
+.breadcrumb-link .icon {
+    font-size: 16px;
+    display: inline-block;
 }
 
 .breadcrumb .separator {
-    margin: 0 8px;
+    margin: 0 4px;
     color: #ddd;
+    font-weight: 300;
 }
 
 .breadcrumb .current {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: #333;
     font-weight: 500;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, rgba(200, 90, 58, 0.08) 0%, rgba(217, 126, 84, 0.04) 100%);
+    border-radius: 6px;
+    border-left: 3px solid #c85a3a;
+}
+
+.breadcrumb .current .icon {
+    font-size: 16px;
 }
 
 /* Header Styles */
