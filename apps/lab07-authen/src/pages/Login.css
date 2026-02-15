@@ -1,0 +1,116 @@
+/* สีพื้นหลังของหน้าจอ */
+.login-content {
+  --background: #f4f6f8;
+}
+
+/* จัดกึ่งกลางหน้าจอ */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* ส่วนหัวข้อ */
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.fw-bold {
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  color: #1f2937;
+}
+
+.login-header p {
+  color: #6b7280;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* กล่องสีขาวบรรจุฟอร์ม */
+.login-card {
+  background: #ffffff;
+  width: 100%;
+  padding: 30px 25px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* จัดระยะห่างช่องกรอกข้อมูล */
+.input-group {
+  margin-bottom: 25px;
+}
+
+/* ตกแต่งช่อง Input */
+.custom-input {
+  --background: #f9fafb;
+  --border-radius: 12px;
+  --padding-start: 15px;
+  color: #374151;
+  text-align: justify;
+  margin-bottom: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus-within {
+  border-color: var(--ion-color-primary);
+}
+
+/* ปุ่มหลัก (Login / Send OTP) */
+.main-btn {
+  --border-radius: 12px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+  --box-shadow: 0 4px 14px rgba(var(--ion-color-primary-rgb), 0.3);
+}
+
+/* เส้นคั่น OR */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+/* ปุ่ม Google */
+.google-btn {
+  --border-radius: 12px;
+  height: 52px;
+  font-weight: 600;
+  --border-color: #e5e7eb;
+  --border-width: 1px;
+  --color: #374151;
+  margin-bottom: 15px;
+}
+
+/* ปุ่มสลับไปใช้เบอร์โทร */
+.phone-switch-btn {
+  --color: #4b5563;
+  font-weight: 500;
+  margin-top: 10px;
+}

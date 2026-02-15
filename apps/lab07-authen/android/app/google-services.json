@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "298903518750",
+    "project_id": "lab06-expense-14778",
+    "storage_bucket": "lab06-expense-14778.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298903518750:android:5b662f89dbf2480077f80f",
+        "android_client_info": {
+          "package_name": "cpkku.weerawong.lab07"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298903518750-r37a9hhubbh3anis3fsfjsupubh2g7a7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cpkku.weerawong.lab07",
+            "certificate_hash": "6546f8760c94c5bd927b4cd48cfdee42b64d0dfb"
+          }
+        },
+        {
+          "client_id": "298903518750-bqujvaiu8sub28q5eql2ikbf87lcg0o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298903518750-bqujvaiu8sub28q5eql2ikbf87lcg0o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
